@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nav-height: 74px;
+}
+
+html {
+  &::-webkit-scrollbar {
+    @apply w-1.5 bg-gray-800;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-br transition-all from-emerald-300/70 to-sky-500/70 hover:from-emerald-300 hover:to-sky-500;
+  }
+}
+
+::selection {
+  @apply bg-sky-400 text-sky-950;
+}
+
+@keyframes animate-to-left {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-lg h-10 sm:h-12 md:h-10 px-6 flex items-center gap-1.5 font-medium text-base md:text-sm transition-all;
+
+    &--fill {
+      @apply hover:bg-transparent hover:text-gray-100 border border-gray-100/50 bg-gray-100 text-gray-950;
+    }
+
+    &--border {
+      @apply border-white/15 border hover:bg-white/15;
+    }
+
+    &--border-fill-color {
+      @apply border-white/15 border hover:bg-white/90 hover:text-gray-950;
+    }
+  }
+
+  .sendBtn {
+    &:hover svg {
+      @apply rotate-45;
+    }
+  }
+  .responsiveContainer {
+    @apply w-[92%] xxs:w-[90%] lg:w-[80%] xl:w-[70%] mx-auto;
+  }
+
+  .headerBgGr {
+    @apply absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2  shadow-[0_0_80px_inset] border-2 rounded-full -z-[5] border-emerald-300/5 shadow-emerald-300/5;
+  }
+
+  .fullHeightMinusNav {
+    height: calc(100dvh - var(--nav-height));
+  }
+
+  .cursorShadow {
+    filter: drop-shadow(0px 0px 5px rgba(0, 88, 170, 0.8));
+  }
+
+  .pagesH1 {
+    @apply text-center font-bold text-4xl md:text-5xl;
+  }
+
+  .h1grd {
+    @apply bg-gradient-to-b from-neutral-50 to-neutral-300 text-transparent inline-block bg-clip-text;
+  }
+
+  .headingWithBorder {
+    @apply w-max mx-auto font-bold text-3xl relative md:text-4xl before:top-full before:bg-primary before:w-1/2 before:h-1 before:left-1/2 before:-translate-x-1/2 before:absolute pb-4 tracking-wide;
+  }
+
+  .plus-icon {
+    @apply relative w-[.85rem] h-0.5 outline-none;
+
+    &::after,
+    &::before {
+      content: '';
+      @apply absolute top-0 right-0 bg-neutral-100 w-[.85rem] h-0.5 rounded-full transition-all;
+    }
+
+    &::after {
+      @apply rotate-90;
+    }
+
+    &.active {
+      &::after {
+        @apply rotate-0;
+      }
+    }
+  }
+
+  // Navbar
+
+  .navlist {
+    --active: 0;
+    --gap: 0.5rem;
+
+    display: none;
+    align-items: center;
+    gap: var(--gap);
+    text-transform: capitalize;
+    position: relative;
+    isolation: isolate;
+
+    &::after {
+      content: '';
+      @apply bg-white rounded-full;
+      z-index: -1;
+      pointer-events: none;
+      height: 100%;
+      position: absolute;
+      width: var(--width);
+      transform: translateX(calc(var(--move) + var(--active) * var(--gap)));
+      transition: transform 0.2s ease-out;
+    }
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .testimonials {
+    --_gap: 1rem;
+    // mask: radial-gradient(white, transparent 70%);
+
+    section {
+      @apply py-4;
+      overflow-x: clip;
+      mask-image: linear-gradient(
+        to right,
+        transparent,
+        white 10%,
+        white 90%,
+        transparent
+      );
+
+      ul {
+        width: 100%;
+        display: grid;
+        gap: var(--_gap);
+        // padding: 0 var(--_gap);
+        grid-auto-flow: column;
+        grid-auto-columns: 70%;
+        animation: animate-to-left 50s forwards linear infinite;
+
+        @media screen and (width >= 600px) {
+          grid-auto-columns: 50%;
+        }
+
+        @media screen and (width >= 700px) {
+          grid-auto-columns: 45%;
+        }
+
+        @media screen and (width >= 1000px) {
+          grid-auto-columns: 38%;
+        }
+
+        @media screen and (width >= 1500px) {
+          grid-auto-columns: 24%;
+        }
+
+        &:hover {
+          animation-play-state: paused;
+        }
+
+        li {
+          &:hover {
+            rotate: -2deg;
+            scale: 1.02;
+            box-shadow: 0px 0px 20px rgba(31, 41, 55, 0.5);
+          }
+        }
+      }
+    }
+  }
+}

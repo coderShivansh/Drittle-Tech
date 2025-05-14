@@ -1,0 +1,6 @@
+In backend part
+1. add a route for pdf generation 
+3. security and rate limit
+4. in testimonial add a status and status approve also
+5. check some validation rules
+7. add auth in create, update and delete
