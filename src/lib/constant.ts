@@ -42,10 +42,10 @@ export const routes: Route[] = [
     name: 'career 🔥',
     path: '/careers',
   },
-  {
-    name: 'services',
-    path: '#services',
-  },
+  // {
+  //   name: 'services',
+  //   path: '#services',
+  // },
 ];
 
 export const SERVICES: Content[] = [
@@ -233,9 +233,9 @@ export const INTERNSHIPS: (Content & {
     description:
       'We’re hiring a Web Developer to build responsive web applications using React.js, Next.js, or Vue.js. Strong skills in JavaScript, HTML5, and CSS3 are essential. Experience with back-end technologies and SEO is a plus. Join us at Drittle Tech and contribute to exciting projects in a collaborative environment.',
     icon: LuCode2,
-    date: '2024-08-10',
+    date: '2025-03-10',
     status: 'open',
-    stipend: `${85_00} / Month`,
+    stipend: `${25_000} / Month`,
   },
   {
     id: '2',
@@ -243,9 +243,9 @@ export const INTERNSHIPS: (Content & {
     description:
       'We’re hiring an App Developer to create innovative mobile applications for iOS and Android using Flutter, React Native, or Vue-Quasar. Strong skills in mobile development and a passion for delivering high-quality apps are essential. If you’re excited about building impactful solutions and working in a collaborative environment, we’d love to hear from you at Drittle Tech.',
     icon: CiMobile3,
-    date: '2024-08-10',
+    date: '2025-05-15',
     status: 'open',
-    stipend: `${85_00} / Month`,
+    stipend: `${30_000} / Month`,
   },
   {
     id: '3',
@@ -255,7 +255,7 @@ export const INTERNSHIPS: (Content & {
     icon: FaEthereum,
     date: '2024-08-10',
     status: 'open',
-    stipend: `${85_00} / Month`,
+    stipend: `${35_000} / Month`,
   },
 ];
 
@@ -294,16 +294,16 @@ export const FAQS: Faq[] = [
 export const REVIEWS = [
   {
     id: 1,
-    username: 'john_doe',
-    name: 'John Doe',
+    username: 'Alex_Folsom',
+    name: 'Alex Folsom',
     postedOn: '2024-08-30T12:00:00Z',
     review: 'Great product, really satisfied with the quality!',
     img: 'https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d',
   },
   {
     id: 2,
-    username: 'jane_smith',
-    name: 'Jane Smith',
+    username: 'Sherliey_Lewis',
+    name: 'Sherliey Lewis',
     postedOn: '2024-08-29T14:15:00Z',
     review: 'The service was excellent, will buy again.',
     img: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1',
@@ -318,16 +318,16 @@ export const REVIEWS = [
   },
   {
     id: 4,
-    username: 'maria_garcia',
-    name: 'Maria Garcia',
+    username: 'Silvi',
+    name: 'Silvi',
     postedOn: '2024-08-27T09:45:00Z',
     review: 'Amazing experience! Highly recommended.',
     img: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df',
   },
   {
     id: 5,
-    username: 'chris_lee',
-    name: 'Chris Lee',
+    username: 'Mithilesh',
+    name: 'Mithilesh',
     postedOn: '2024-08-26T17:20:00Z',
     review: 'Fast delivery and great customer support.',
     img: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde',
