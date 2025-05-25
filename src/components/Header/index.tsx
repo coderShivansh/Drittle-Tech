@@ -36,9 +36,9 @@ const Header = ({}: Props) => {
             className='btn btn--border'>
             Book a Call <IoMdArrowForward className='-rotate-45 h-4 w-auto' />
           </Link>
-          <button type='button' className='btn btn--fill'>
+          <Link href='/projects' className='btn btn--fill'>
             View Work <IoMdArrowForward className='-rotate-45 h-4 w-auto' />
-          </button>
+          </Link>
         </div>
       </div>
     </header>

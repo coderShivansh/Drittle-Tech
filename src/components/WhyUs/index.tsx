@@ -14,7 +14,7 @@ const WhyUs = ({}: Props) => {
     <section className='responsiveContainer flex flex-col text-gray-50'>
       <SectionHeader
         heading='Why Choose Us?'
-        description='Delivering Excellence, Empowering Growth'
+        description='We are the best when it comes to Deliver Excellence and Empower Growth'
       />
       <ul className='grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-16 gap-x-5'>
         {STRENGTHS.map((service) => (

@@ -43,7 +43,7 @@ export const routes: Route[] = [
     path: '/careers',
   },
   // {
-  //   name: 'services',
+  //   name: 'Services',
   //   path: '#services',
   // },
 ];
@@ -197,17 +197,17 @@ export const STRENGTHS: Content[] = [
 export const socialMediaLinks = [
   {
     name: 'fb',
-    link: '',
+    link: 'https://www.facebook.com/drittleTech/',
     icon: FaFacebookSquare,
   },
   {
     name: 'x',
-    link: '',
+    link: 'https://x.com/DrittleTech',
     icon: FaXTwitter,
   },
   {
     name: 'free',
-    link: '',
+    link: 'https://www.freelancer.in/u/drittletech',
     icon: SiFreelancer,
   },
   {
@@ -217,7 +217,7 @@ export const socialMediaLinks = [
   },
   {
     name: 'linkedin',
-    link: '',
+    link: 'https://www.linkedin.com/company/drittle-tech/',
     icon: FaLinkedinIn,
   },
 ];

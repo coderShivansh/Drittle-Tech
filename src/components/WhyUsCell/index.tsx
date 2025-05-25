@@ -24,7 +24,7 @@ const WhyUsCell = ({ description, heading, Icon }: Props) => {
           !showFullContent &&
             '[mask-image:linear-gradient(to_bottom,white_50%,transparent)]'
         )}>
-        {Icon && <Icon className='h-14 w-auto mr-auto text-sky-300 shrink-0' />}
+        {Icon &&  <Icon className='h-14 w-auto mr-auto text-sky-300 shrink-0' />}
         <h4 className='text-xl md:text-2xl font-semibold text-gray-100'>
           {heading}
         </h4>
