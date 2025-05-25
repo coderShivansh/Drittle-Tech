@@ -16,6 +16,14 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Home - Drittle Tech',
   description: 'Drittle Tech | IT Services Company | Build Your IT Here | Software | MVP',
+  keywords: ['Drittle Tech', 'IT services', 'software development', 'MVP development'],
+  openGraph: {
+    title: 'Drittle Tech | IT Services & Software Development',
+    description: 'Drittle Tech builds custom software and scalable IT solutions for startups and enterprises.',
+    type: 'website',
+    url: 'https://drittletech.com',
+    siteName: 'Drittle Tech',
+  },
 };
 
 export default function RootLayout({

@@ -47,7 +47,7 @@ useEffect(() => {
   return (
     <nav className='fixed top-3 sm:top-6 left-0 w-full z-[100]'>
       <div  ref={navbarRef} className='w-[92%] mx-auto md:w-[80%] lg:w-[88%] xl:w-[75%] text-gray-100 rounded-2xl bg-gray-800 border border-gray-700 bg-opacity-50 backdrop-blur-lg flex items-center justify-between gap-2 xl:gap-5 py-4 px-5'>
-        <Link href={'/'}>
+        <Link href={'/'} aria-label="Drittle Tech Homepage">
           <Logo />
         </Link>
 

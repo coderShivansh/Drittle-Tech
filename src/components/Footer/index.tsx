@@ -41,7 +41,7 @@ const Footer = ({}: Props) => {
           </div>
 
           <p className='mt-2 text-gray-400 hidden lg:block'>
-            Copyright &copy; 2024 Drittle Tech. All Rights Reserved.
+            Copyright &copy; {new Date().getFullYear()} Drittle Tech. All Rights Reserved.
           </p>
         </div>
 
