@@ -35,11 +35,11 @@ export const routes: Route[] = [
     path: '/about',
   },
   {
-    name: 'work',
+    name: 'works 🔥',
     path: '/projects',
   },
   {
-    name: 'career 🔥',
+    name: 'career',
     path: '/careers',
   },
   // {

@@ -19,7 +19,7 @@ type Props = {};
 const ProjectPage = ({}: Props) => {
   return (
     <>
-      <PageHeader heading='Project Gallery' description='Gallery of projects done by drittle tech' />
+      <PageHeader heading='Project Gallery' description='Gallery of projects done by Drittle Tech' />
       <main className='py-32 flex flex-col gap-32'>
         <Projects showAll={true} />
         <Testimonials />

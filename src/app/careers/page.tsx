@@ -43,14 +43,14 @@ const CareersPage = ({}: Props) => {
             and skilled professional, Drittle Tech is the place for you.
           </p>
 
-          <button className='btn btn--fill self-center mt-4'>
+          <Link href='/careers#openPositions' className='btn btn--fill self-center mt-4'>
             Explore Openings{' '}
             <IoMdArrowForward className='rotate-90 h-4 w-auto' />
-          </button>
+          </Link>
         </div>
       </header>
 
-      <section className='responsiveContainer py-16 flex flex-col'>
+      <section id='openPositions' className='responsiveContainer py-16 flex flex-col'>
         <SectionHeader heading='Open Positions' description='Come Join us' />
         <div className='flex w-full mb-10'>
           <div className='self-end w-max ml-auto border-b border-gray-300 flex gap-2 items-center'>

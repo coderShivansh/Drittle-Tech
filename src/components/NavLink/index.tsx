@@ -60,7 +60,7 @@ const NavLink = ({ href, children, className, ...props }: Props) => {
       className={cn(
         'transition-all py-2 inline-block px-6 rounded-full font-medium',
         className,
-        pathname === href && 'text-gray-950'
+        pathname === href && 'bg-white text-gray-950'
       )}>
       {children}
     </Link>
